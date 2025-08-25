@@ -1,0 +1,38 @@
+block variables
+  - var title = "Engineering Excellence TODO"
+  - var description = "TODO"
+  - var slug = ""
+  - var card = "TODO.png"
+
+doctype html
+html(lang="en")
+
+  head
+
+    title #{title} — Radian Advisory
+    meta(name="description", content="#{description}")
+    meta(name="theme-color", content="#TODO")
+    meta(charset="utf-8")
+    meta(name="author", content="Cody Lindsay Gordon")
+
+    block viewport
+      meta(name="viewport", content="initial-scale=1")
+
+    meta(property="og:title", content="#{title}")
+    meta(property="og:site_name", content="Radian Advisory")
+    meta(property="og:description", content="#{description}")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="https://radianadvisory.com/#{slug}")
+    meta(property="og:image", content="https://radianadvisory.com/#{card}")
+
+    link(rel="icon", href="/favicon.svg")
+    link(rel="stylesheet", href="/static/styles.css", async)
+
+    block headExtra
+
+  body
+
+    block header
+      include _header
+
+    block content

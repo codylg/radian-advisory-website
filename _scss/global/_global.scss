@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+::selection {
+  background-color: var(--c);
+  text-shadow: none;
+  color: var(--a);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  background-color: var(--a);
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.33em;
+  color: var(--c);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0;
+  font-family: $font;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+p,
+ol,
+ul {
+  margin: 1.5em 0;
+  font-family: $font;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+
+  &.large {
+    font-size: 1.7rem;
+    line-height: 1.6em;
+  }
+}
+
+ol,
+ul {
+  padding-left: 2em;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+a,
+a:visited {
+  text-decoration-thickness: 1px;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration-style: solid;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+p a:focus {
+  background-color: var(--c);
+  color: var(--a);
+  text-decoration: none;
+}

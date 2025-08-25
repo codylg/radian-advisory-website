@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+:root {
+  --a: #EFEDEA;
+  --b: #A29D99;
+  --c: #23211F;
+  --rad-s: 2px;
+  --rad-m: 5px;
+  --rad-l: 8px;
+}
+
+::selection {
+  background-color: var(--c);
+  text-shadow: none;
+  color: var(--a);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  background-color: var(--a);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.33em;
+  color: var(--c);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+p,
+ol,
+ul {
+  margin: 1.5em 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+
+p.large,
+ol.large,
+ul.large {
+  font-size: 1.7rem;
+  line-height: 1.6em;
+}
+
+ol,
+ul {
+  padding-left: 2em;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+a,
+a:visited {
+  text-decoration-thickness: 1px;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
+a:hover, a:focus, a:active,
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+  text-decoration-style: solid;
+}
+
+a {
+  color: inherit;
+}
+
+p a:focus {
+  background-color: var(--c);
+  color: var(--a);
+  text-decoration: none;
+}
+
+.content-panel.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 1260px) and (min-width: 600px) {
+  .content-panel.banner {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-panel.banner {
+    padding: 30px 20px;
+  }
+}
+
+.content-panel.banner p {
+  margin: 0;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1em 1.2em;
+  border: 1px solid var(--b);
+  border-radius: var(--rad-m);
+  background-color: var(--a);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--c);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+.button:focus {
+  text-decoration: underline;
+}
+
+.tag {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 25px;
+  padding: 6px 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1em;
+  color: var(--c);
+}

@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1em 1.2em;
+  border: 1px solid var(--b);
+  border-radius: var(--rad-m);
+  background-color: var(--a);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--c);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+
+  @media (max-width: $mobile-media) {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+}
