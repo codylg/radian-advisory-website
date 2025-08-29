@@ -1,8 +1,158 @@
 @import 'global/vars';
 @import 'global/global';
+@import 'global/layout';
 
 @import 'components/banner';
 @import 'components/button';
+@import 'components/cards';
 @import 'components/header';
+@import 'components/icon';
 @import 'components/logo';
 @import 'components/tag';
+
+#header {
+  margin-top: $header-height;
+  padding-top: $page-padding * 4;
+  padding-bottom: $page-padding * 4;
+}
+
+#approach {
+  background-color: var(--c-alt);
+
+  p.large {
+    color: var(--b);
+  }
+
+  .section-left-column,
+  .section-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: $page-padding / 2;
+  }
+
+  .team-photo {
+    padding: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: var(--rad-l);
+    background-color: var(--b-alt);
+
+    img {
+      width: 100%;
+      border-radius: var(--rad-m);
+    }
+  }
+}
+
+#services {
+  .section-columns {
+    gap: $page-padding / 2;
+
+    p.large {
+      color: var(--b);
+    }
+
+    p:not(.large) {
+      margin-bottom: 1em;
+    }
+  }
+
+  .section-left-column,
+  .section-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: $page-padding / 2;
+
+    .card {
+      background-color: var(--c-alt);
+    }
+
+    .icon {
+
+      svg {
+        stroke: var(--brand);
+      }
+    }
+  }
+}
+
+#contact {
+  background-color: var(--c-alt);
+
+  .section-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: $page-padding / 2;
+  }
+}
+
+#footer {
+  border-top: 1px solid var(--b-alt);
+
+  .section-right-column p {
+    margin: 0;
+    color: var(--b);
+
+    + p {
+      margin-top: 12px;
+    }
+  }
+}
+
+.brand-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &::after {
+    content: '';
+    display: block;
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--brand);
+  }
+}
+
+#contact-form {
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    label {
+      width: 100%;
+      font-size: 14px;
+
+      &.required-field::after {
+        content: ' *';
+        color: var(--brand);
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 16px;
+      border: 1px solid var(--b-alt);
+      border-radius: var(--rad-m);
+      background-color: rgba(255,255,255,0.04);
+      -webkit-appearance: none;
+      appearance: none;
+      font-size: 16px;
+      color: var(--a);
+
+      + label,
+      + button {
+        margin-top: 12px;
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+}

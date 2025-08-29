@@ -1,6 +1,7 @@
 $font: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 $page-padding: 40px;
-$content-width: 700px;
+$content-width: 1024px;
+$header-height: 64px;
 
 $oversize-media: 1780px;
 $large-media: 1260px;
@@ -9,11 +10,15 @@ $small-media: 800px;
 $mobile-media: 600px;
 
 :root {
-  --a: #EFEDEA;
-  --b: #A29D99;
-  --c: #23211F;
+  --a: #f1f6f4;
+  --b: #a6adaa;
+  --b-alt: #313333;
+  --c: #0f1110;
+  --c-alt: #171917;
+  --brand: #48C0B8;
+  --brand-dark: #26A49E;
 
-  --rad-s: 2px;
-  --rad-m: 5px;
-  --rad-l: 8px;
+  --rad-s: 4px;
+  --rad-m: 8px;
+  --rad-l: 12px;
 }

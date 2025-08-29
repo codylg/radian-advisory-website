@@ -1,0 +1,16 @@
+.card {
+  display: block;
+  box-sizing: border-box;
+  padding: $page-padding / 2;
+  border: 1px solid var(--b-alt);
+  border-radius: var(--rad-l);
+  background-color: var(--c);
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

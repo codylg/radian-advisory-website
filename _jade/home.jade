@@ -2,4 +2,147 @@ extends layout
 
 block content
 
-  h1 Hello world
+  section#header
+    div.section-summary
+      h1 Engineering Excellence,
+       br
+       span.brand Delivered
+      p.large Radian Advisory provides comprehensive engineering consulting services to help your business solve complex technical challenges and drive innovation forward.
+      a(href="#contact").button Contact Us
+
+  section#approach
+    div.section-summary
+      h2 Our Approach
+      p.large With decades of combined experience in engineering and technology, we bring deep expertise and innovative solutions to every project.
+    div.section-columns
+      div.section-left-column
+        //- h3 Our Expertise
+        //- p.large We specialize in providing strategic engineering consulting across multiple disciplines, helping organizations navigate complex technical challenges and implement cutting-edge solutions.
+        //- p.large Our team combines technical excellence with business acumen to deliver results that drive real value for our clients.
+        div.team-photo
+          img(src="/static/team.webp" alt="A photo of the Radian Advisory team at a construction site giving a thumbs up")
+        div.banner
+          div.icon
+            svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+              path(d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0")
+              circle(cx="12" cy="10" r="3")
+          p Based in Brisbane, Australia
+      div.section-right-column
+        div.card
+          h3.brand-line Innovation-Driven
+          p We stay at the forefront of technological advancement to bring you the most innovative solutions.
+        div.card
+          h3.brand-line Client-Focused
+          p Every solution is tailored to your specific needs and business objectives.
+        div.card
+          h3.brand-line Results-Oriented
+          p We measure success by the tangible impact we create for your organization.
+
+  section#services
+    div.section-summary
+      h2 Our Services
+      p.large We offer a comprehensive suite of engineering consulting services designed to meet your organization's unique challenges and goals.
+    div.section-columns
+      div.section-left-column
+        div.card
+          div.icon-and-header
+            div.icon.icon-box
+              svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                path(d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915")
+                circle(cx="12" cy="12" r="3")
+            h3 Systems Engineering
+          p.large Comprehensive systems design, analysis, and optimization for complex engineering challenges.
+          p Key Areas:
+          div.tag-list
+            div.tag System Architecture
+            div.tag Requirements Analysis
+            div.tag Performance Optimization
+            div.tag Risk Assessment
+        div.card
+          div.icon-and-header
+            div.icon.icon-box
+              svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                path(d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5")
+                path(d="M9 18h6")
+                path(d="M10 22h4")
+            h3 Technical Consulting
+          p.large Expert guidance on technology selection, implementation strategies, and best practices.
+          p Key Areas:
+          div.tag-list
+            div.tag Technology Assessment
+            div.tag Implementation Planning
+            div.tag Process Improvement
+            div.tag Technical Audits
+      div.section-right-column
+        div.card
+          div.icon-and-header
+            div.icon.icon-box
+              svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                path(d="M8 2v4")
+                path(d="M16 2v4")
+                rect(width="18" height="18" x="3" y="4" rx="2")
+                path(d="M3 10h18")
+            h3 Project Management
+          p.large End-to-end project leadership ensuring on-time, on-budget delivery of engineering initiatives.
+          p Key Areas:
+          div.tag-list
+            div.tag Project Planning
+            div.tag Resource Management
+            div.tag Quality Assurance
+            div.tag Stakeholder Communication
+        div.card
+          div.icon-and-header
+            div.icon.icon-box
+              svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                path(d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z")
+            h3 Innovation Strategy
+          p.large Strategic planning and roadmap development for technology innovation and digital transformation.
+          p Key Areas:
+          div.tag-list
+            div.tag Innovation Roadmaps
+            div.tag Technology Strategy
+            div.tag Digital Transformation
+            div.tag R&D Planning
+
+  section#contact
+    div.section-summary
+      h2 Get In Touch
+      p.large Ready to discuss your next engineering challenge? We'd love to hear from you and explore how we can help drive your project forward.
+    div.section-columns
+      div.section-left-column
+        div.card
+          h4.brand-line Email
+          p.large
+            a(href="mailto:contact@radianadvisory.com") contact@radianadvisory.com
+        div.card
+          h4.brand-line Phone
+          p.large
+            a(href="tel:0481832840") 0481 832 840
+        div.card
+          h4.brand-line Hours
+          p.large Monday - Friday
+            br
+            | 9:00 AM - 5:00 PM AEST
+      div.section-right-column
+        div.card#contact-form
+          h3 Send Us a Message
+          form(action="https://docs.google.com/forms/d/e/1FAIpQLSfoPsrh21zaPfZssPoqB5HGWL5GZQiX3HXnXnYAcJMg7chiUA/formResponse")
+            label.required-field(for="entry.2004354972") Name
+            input(name="entry.2004354972" required)
+            label(for="entry.817567033") Company
+            input(name="entry.817567033")
+            label.required-field(for="entry.1255033394") Email
+            input(name="entry.1255033394" type="email" required)
+            label.required-field(for="entry.1621746097") Message
+            textarea(name="entry.1621746097" required)
+            button.button(type="submit") Send message
+
+  section#footer
+    div.section-columns
+      div.section-left-column
+        include _logo
+      div.section-right-column
+        p
+          a(href="mailto:contact@radianadvisory.com") contact@radianadvisory.com
+        p
+          a(href="tel:0481832840") 0481 832 840

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 ::selection {
-  background-color: var(--c);
+  background-color: var(--a);
   text-shadow: none;
-  color: var(--a);
+  color: var(--c);
 }
 
 html {
@@ -14,12 +14,12 @@ body {
   width: 100vw;
   max-width: 100%;
   margin: 0;
-  background-color: var(--a);
+  background-color: var(--c);
   font-family: $font;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.33em;
-  color: var(--c);
+  color: var(--a);
 }
 
 h1,
@@ -30,20 +30,20 @@ h5,
 h6 {
   margin: 1em 0;
   font-family: $font;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2em;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5.2rem;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h4 {
@@ -95,8 +95,12 @@ a {
   color: inherit;
 }
 
-p a:focus {
-  background-color: var(--c);
-  color: var(--a);
+a:focus {
+  background-color: var(--a);
+  color: var(--c);
   text-decoration: none;
+}
+
+.brand {
+  color: var(--brand);
 }

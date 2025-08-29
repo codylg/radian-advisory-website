@@ -1,0 +1,38 @@
+section {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: $page-padding * 2 $page-padding;
+
+  > div {
+    max-width: $content-width;
+
+    > h1,
+    > h2,
+    > h3 {
+      margin-top: 0
+    }
+  }
+}
+
+.section-summary {
+  max-width: 720px;
+  text-align: center;
+
+  p {
+    color: var(--b);
+  }
+}
+
+.section-columns {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $page-padding;
+  width: 100%;
+  padding-top: $page-padding;
+
+  > div {
+    flex-basis: 360px;
+    flex-grow: 1;
+  }
+}

@@ -1,21 +1,14 @@
-.content-panel.banner {
+.banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 0;
-  padding: 0;
-  background-color: transparent;
-  box-shadow: none;
-
-  @media (max-width: $large-media) and (min-width: $mobile-media) {
-    margin-top: $page-padding;
-  }
-
-  @media (max-width: $mobile-media) {
-    padding: 30px 20px;
-  }
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--rad-m);
+  background-color: var(--c);
 
   p {
     margin: 0;
+    margin-bottom: 4px;
   }
 }
