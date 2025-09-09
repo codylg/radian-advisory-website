@@ -14,6 +14,9 @@
   margin-top: $header-height;
   padding-top: $page-padding * 4;
   padding-bottom: $page-padding * 4;
+  background-image: url("/static/brisbane.webp");
+  background-size: cover;
+  background-position: bottom center;
 
   h5 {
     color: var(--b);

@@ -328,6 +328,9 @@ header.page-header .contact-details a:not(:hover) {
   margin-top: 64px;
   padding-top: 160px;
   padding-bottom: 160px;
+  background-image: url("/static/brisbane.webp");
+  background-size: cover;
+  background-position: bottom center;
 }
 
 #header h5 {
