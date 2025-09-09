@@ -44,10 +44,6 @@
   .section-columns {
     gap: $page-padding / 2;
 
-    p.large {
-      color: var(--b);
-    }
-
     p:not(.large) {
       margin-bottom: 1em;
     }
@@ -78,10 +74,6 @@
 
 #approach {
   background-color: var(--c-alt);
-
-  p.large {
-    color: var(--b);
-  }
 
   .section-left-column,
   .section-right-column {
@@ -144,10 +136,6 @@
     p:last-child {
       margin-bottom: 0;
     }
-
-    p.large {
-      color: var(--b);
-    }
   }
 }
 
@@ -169,7 +157,6 @@
 
   .section-right-column p {
     margin: 0;
-    color: var(--b);
 
     + p {
       margin-top: 12px;

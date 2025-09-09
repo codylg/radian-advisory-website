@@ -155,11 +155,6 @@ section > div > h3 {
   text-align: center;
 }
 
-.section-summary p,
-.section-secondary p {
-  color: var(--b);
-}
-
 .section-secondary {
   margin-top: 80px;
 }
@@ -369,10 +364,6 @@ header.page-header .contact-details a:not(:hover) {
   gap: 20px;
 }
 
-#services .section-columns p.large {
-  color: var(--b);
-}
-
 #services .section-columns p:not(.large) {
   margin-bottom: 1em;
 }
@@ -399,10 +390,6 @@ header.page-header .contact-details a:not(:hover) {
 
 #approach {
   background-color: var(--c-alt);
-}
-
-#approach p.large {
-  color: var(--b);
 }
 
 #approach .section-left-column,
@@ -466,10 +453,6 @@ header.page-header .contact-details a:not(:hover) {
   margin-bottom: 0;
 }
 
-#projects .card p.large {
-  color: var(--b);
-}
-
 #contact .section-left-column {
   display: flex;
   flex-direction: column;
@@ -486,7 +469,6 @@ header.page-header .contact-details a:not(:hover) {
 
 #footer .section-right-column p {
   margin: 0;
-  color: var(--b);
 }
 
 #footer .section-right-column p + p {
