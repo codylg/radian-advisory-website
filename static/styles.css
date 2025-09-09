@@ -123,6 +123,10 @@ a:focus {
   color: var(--brand);
 }
 
+.grey-text {
+  color: var(--b);
+}
+
 section:not(:first-of-type),
 footer {
   border-top: 1px solid var(--b-alt);
@@ -383,6 +387,14 @@ header.page-header .contact-details a:not(:hover) {
 #services .section-left-column .icon svg,
 #services .section-right-column .icon svg {
   fill: var(--brand);
+}
+
+#services ul {
+  text-align: left;
+}
+
+#services ul li {
+  margin-top: 16px;
 }
 
 #approach {
