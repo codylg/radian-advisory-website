@@ -47,7 +47,7 @@ h6 {
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 4.8rem;
 }
 
 h2 {
@@ -338,6 +338,10 @@ header.page-header .contact-details a:not(:hover) {
   background-position: bottom center;
 }
 
+#header .section-summary {
+  max-width: 880px;
+}
+
 #header h5 {
   color: var(--b);
 }
@@ -351,11 +355,6 @@ header.page-header .contact-details a:not(:hover) {
 
 #header .logo-lineup img {
   width: 120px;
-}
-
-.tagline span {
-  margin-top: -0.1em;
-  font-size: 0.6em;
 }
 
 #services {
@@ -424,18 +423,35 @@ header.page-header .contact-details a:not(:hover) {
 
 #projects .card img {
   display: block;
-  width: 280px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: var(--rad-s);
 }
 
+#projects .card .header-and-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 24px;
+}
+
+#projects .card .header-and-tag h3 {
+  margin: 0;
+}
+
 #projects .card h3,
-#projects .card h4 {
+#projects .card h5 {
   margin-bottom: 0.4em;
 }
 
 #projects .card h3 + p,
-#projects .card h4 + p {
+#projects .card h5 + p {
   margin-top: 0;
+}
+
+#projects .card p:last-child {
+  margin-bottom: 0;
 }
 
 #projects .card p.large {

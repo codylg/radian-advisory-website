@@ -18,6 +18,10 @@
   background-size: cover;
   background-position: bottom center;
 
+  .section-summary {
+    max-width: 880px;
+  }
+
   h5 {
     color: var(--b);
   }
@@ -33,15 +37,6 @@
     }
   }
 }
-
-.tagline {
-
-  span {
-    margin-top: -0.1em;
-    font-size: 0.6em;
-  }
-}
-
 
 #services {
   background-color: var(--c-alt);
@@ -112,17 +107,34 @@
 
     img {
       display: block;
-      width: 280px;
+      max-width: 300px;
+      max-height: 300px;
       border-radius: var(--rad-s);
     }
 
+    .header-and-tag {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0 24px;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
     h3,
-    h4 {
+    h5 {
       margin-bottom: 0.4em;
 
-      +p {
+      + p {
         margin-top: 0;
       }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
 
     p.large {
