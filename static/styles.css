@@ -467,15 +467,30 @@ header.page-header .contact-details a:not(:hover) {
 
 .brand-line {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 16px;
 }
 
-.brand-line::after {
+.brand-line::before, .brand-line::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: var(--brand);
+}
+
+.brand-line-after {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-line-after::after {
   content: '';
   display: block;
   flex-grow: 1;
-  height: 2px;
+  height: 1px;
   background-color: var(--brand);
 }
 
