@@ -277,7 +277,7 @@ header.page-header .contact-details a {
 }
 
 header.page-header .contact-details a + a {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 header.page-header .contact-details a:not(:hover) {
