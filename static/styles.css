@@ -123,6 +123,11 @@ a:focus {
   color: var(--brand);
 }
 
+section:not(:first-of-type),
+footer {
+  border-top: 1px solid var(--b-alt);
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -449,7 +454,6 @@ header.page-header .contact-details a:not(:hover) {
 
 #footer {
   background-color: var(--c-alt);
-  border-top: 1px solid var(--b-alt);
 }
 
 #footer .section-right-column p {
