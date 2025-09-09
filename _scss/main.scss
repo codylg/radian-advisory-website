@@ -14,6 +14,60 @@
   margin-top: $header-height;
   padding-top: $page-padding * 4;
   padding-bottom: $page-padding * 4;
+
+  h5 {
+    color: var(--b);
+  }
+
+  .logo-lineup {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: $page-padding;
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.tagline {
+
+  span {
+    margin-top: -0.1em;
+    font-size: 0.6em;
+  }
+}
+
+
+#services {
+  background-color: var(--c-alt);
+
+  .section-columns {
+    gap: $page-padding / 2;
+
+    p.large {
+      color: var(--b);
+    }
+
+    p:not(.large) {
+      margin-bottom: 1em;
+    }
+  }
+
+  .section-left-column,
+  .section-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: $page-padding / 2;
+
+    .icon {
+
+      svg {
+        fill: var(--brand);
+      }
+    }
+  }
 }
 
 #approach {
@@ -44,49 +98,51 @@
   }
 }
 
-#services {
-  .section-columns {
+#projects {
+
+  .card {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
     gap: $page-padding / 2;
+    background-color: var(--c-alt);
+
+    img {
+      display: block;
+      width: 280px;
+      border-radius: var(--rad-s);
+    }
+
+    h3,
+    h4 {
+      margin-bottom: 0.4em;
+
+      +p {
+        margin-top: 0;
+      }
+    }
 
     p.large {
       color: var(--b);
-    }
-
-    p:not(.large) {
-      margin-bottom: 1em;
-    }
-  }
-
-  .section-left-column,
-  .section-right-column {
-    display: flex;
-    flex-direction: column;
-    gap: $page-padding / 2;
-
-    .card {
-      background-color: var(--c-alt);
-    }
-
-    .icon {
-
-      svg {
-        stroke: var(--brand);
-      }
     }
   }
 }
 
 #contact {
-  background-color: var(--c-alt);
 
   .section-left-column {
     display: flex;
     flex-direction: column;
     gap: $page-padding / 2;
   }
+
+  .card {
+    background-color: var(--c-alt);
+  }
 }
 
 #footer {
+  background-color: var(--c-alt);
   border-top: 1px solid var(--b-alt);
 
   .section-right-column p {
